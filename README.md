@@ -1,9 +1,7 @@
 BabyMonitorApp
 ==============
-
 Wifi Audio Baby Monitor
 
-### Baby Monitor iOS application
 This is complete the source code for [Studio Sutara's](studiosutara.com) iOS application on the [app store](https://itunes.apple.com/us/app/hear-my-baby/id773634884)
 
 ### What's in it?
@@ -18,7 +16,6 @@ The App allows either iPhone or iPad to be used as a receiver and transmitter fo
 
 ![](https://github.com/studiosutara/BabyMonitorApp/blob/master/Resources/iPhone1.jpg)
 ![](https://github.com/studiosutara/BabyMonitorApp/blob/master/Resources/iPhone2.jpg)
-![](https://github.com/studiosutara/BabyMonitorApp/blob/master/Resources/iPhone3.jpg)
 ![](https://github.com/studiosutara/BabyMonitorApp/blob/master/Resources/iPhone4.jpg)
 
 
