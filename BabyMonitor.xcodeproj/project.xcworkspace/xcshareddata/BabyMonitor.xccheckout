@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>23D3D2AD-FE02-46CD-AC0C-2C6DD1B5CBBB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BabyMonitor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D0512638-30A5-4068-B63C-A896BE483E6F</key>
+		<string>https://github.com/studiosutara/BabyMonitorApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BabyMonitor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D0512638-30A5-4068-B63C-A896BE483E6F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/studiosutara/BabyMonitorApp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0512638-30A5-4068-B63C-A896BE483E6F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0512638-30A5-4068-B63C-A896BE483E6F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BabyMonitorApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

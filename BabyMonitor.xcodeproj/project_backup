@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6191079136C904700101BDA /* PeerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6191078136C904700101BDA /* PeerManager.mm */; };
+		D61F3BF5135FF9D500DE42D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F3BF4135FF9D500DE42D9 /* UIKit.framework */; };
+		D61F3BF7135FF9D500DE42D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F3BF6135FF9D500DE42D9 /* Foundation.framework */; };
+		D61F3BF9135FF9D500DE42D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F3BF8135FF9D500DE42D9 /* CoreGraphics.framework */; };
+		D61F3BFF135FF9D500DE42D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61F3BFD135FF9D500DE42D9 /* InfoPlist.strings */; };
+		D61F3C02135FF9D500DE42D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C01135FF9D500DE42D9 /* main.m */; };
+		D61F3C05135FF9D500DE42D9 /* BabyMonitorAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C04135FF9D500DE42D9 /* BabyMonitorAppDelegate.mm */; };
+		D61F3C08135FF9D500DE42D9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61F3C06135FF9D500DE42D9 /* MainWindow.xib */; };
+		D61F3C0B135FF9D500DE42D9 /* BabyMonitorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C0A135FF9D500DE42D9 /* BabyMonitorViewController.mm */; };
+		D61F3C0E135FF9D500DE42D9 /* BabyMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61F3C0C135FF9D500DE42D9 /* BabyMonitorViewController.xib */; };
+		D61F3C1E135FFA4700DE42D9 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C1B135FFA4700DE42D9 /* MeterTable.cpp */; };
+		D61F3C1F135FFA4700DE42D9 /* LevelMeter.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C1C135FFA4700DE42D9 /* LevelMeter.mm */; };
+		D61F3C20135FFA4700DE42D9 /* AQLevelMeter.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C1D135FFA4700DE42D9 /* AQLevelMeter.mm */; };
+		D61F3C22135FFA9400DE42D9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61F3C21135FFA9400DE42D9 /* AudioToolbox.framework */; };
+		D61F3C35135FFADC00DE42D9 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C2C135FFADB00DE42D9 /* CADebugMacros.cpp */; };
+		D61F3C36135FFADC00DE42D9 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C30135FFADB00DE42D9 /* CAStreamBasicDescription.cpp */; };
+		D61F3C37135FFADC00DE42D9 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C32135FFADB00DE42D9 /* CAXException.cpp */; };
+		D61F3C3A135FFB0400DE42D9 /* ParentModeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C39135FFB0400DE42D9 /* ParentModeView.mm */; };
+		D61F3C3D135FFB0C00DE42D9 /* BabyModeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C3C135FFB0C00DE42D9 /* BabyModeView.mm */; };
+		D61F3C4C135FFBA500DE42D9 /* PacketSender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C41135FFBA500DE42D9 /* PacketSender.mm */; };
+		D61F3C4D135FFBA500DE42D9 /* PacketReceiver.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C43135FFBA500DE42D9 /* PacketReceiver.mm */; };
+		D61F3C4E135FFBA500DE42D9 /* PeerManagerServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C45135FFBA500DE42D9 /* PeerManagerServer.mm */; };
+		D61F3C4F135FFBA500DE42D9 /* MediaPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C47135FFBA500DE42D9 /* MediaPlayer.mm */; };
+		D61F3C50135FFBA500DE42D9 /* MediaRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C49135FFBA500DE42D9 /* MediaRecorder.mm */; };
+		D61F3C51135FFBA500DE42D9 /* StateMachine.mm in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C4B135FFBA500DE42D9 /* StateMachine.mm */; };
+		D61F3C56135FFBB100DE42D9 /* MediaPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C53135FFBB100DE42D9 /* MediaPacket.cpp */; };
+		D61F3C57135FFBB100DE42D9 /* ControlPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D61F3C55135FFBB100DE42D9 /* ControlPacket.cpp */; };
+		D61F3C5B135FFCC900DE42D9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D61F3C5A135FFCC900DE42D9 /* bg.png */; };
+		D64343421360E61A005A213F /* CustomUISwitch.mm in Sources */ = {isa = PBXBuildFile; fileRef = D64343411360E61A005A213F /* CustomUISwitch.mm */; };
+		D64343451360E673005A213F /* switch_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D64343431360E673005A213F /* switch_bg.png */; };
+		D64343461360E673005A213F /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = D64343441360E673005A213F /* switch.png */; };
+		D64343491360E688005A213F /* switch_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64343471360E688005A213F /* switch_bg@2x.png */; };
+		D643434A1360E688005A213F /* switch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64343481360E688005A213F /* switch@2x.png */; };
+		D643435B1360EEB8005A213F /* device_active.png in Resources */ = {isa = PBXBuildFile; fileRef = D64343591360EEB8005A213F /* device_active.png */; };
+		D643435C1360EEB8005A213F /* device_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = D643435A1360EEB8005A213F /* device_inactive.png */; };
+		D643435F1360EEC1005A213F /* device_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D643435D1360EEC1005A213F /* device_active@2x.png */; };
+		D64343601360EEC1005A213F /* device_inactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D643435E1360EEC1005A213F /* device_inactive@2x.png */; };
+		D643436D13610B68005A213F /* PeerManagerClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = D643436C13610B68005A213F /* PeerManagerClient.mm */; };
+		D643440C1369FC09005A213F /* PeerPickerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D643440B1369FC09005A213F /* PeerPickerView.mm */; };
+		D6AB47281360B13100F4678D /* MainModeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6AB47271360B13100F4678D /* MainModeView.mm */; };
+		D6AB472B1360E31100F4678D /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AB472A1360E31100F4678D /* bg@2x.png */; };
+		D6B6E59C1371C30000D3D507 /* BMUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6B6E59B1371C30000D3D507 /* BMUtility.cpp */; };
+		D6B6E5A713788EB800D3D507 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B6E5A613788EB800D3D507 /* Utilities.m */; };
+		D6B6E5AB137B074B00D3D507 /* ProtocolManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6B6E5AA137B074B00D3D507 /* ProtocolManager.mm */; };
+		D6B6E5AE137BA3D300D3D507 /* DataPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6B6E5AD137BA3D300D3D507 /* DataPacket.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6191077136C904600101BDA /* PeerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerManager.h; sourceTree = "<group>"; };
+		D6191078136C904700101BDA /* PeerManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeerManager.mm; sourceTree = "<group>"; };
+		D61F3BF0135FF9D500DE42D9 /* BabyMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61F3BF4135FF9D500DE42D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D61F3BF6135FF9D500DE42D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D61F3BF8135FF9D500DE42D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D61F3BFC135FF9D500DE42D9 /* BabyMonitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BabyMonitor-Info.plist"; sourceTree = "<group>"; };
+		D61F3BFE135FF9D500DE42D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D61F3C00135FF9D500DE42D9 /* BabyMonitor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyMonitor-Prefix.pch"; sourceTree = "<group>"; };
+		D61F3C01135FF9D500DE42D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D61F3C03135FF9D500DE42D9 /* BabyMonitorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabyMonitorAppDelegate.h; sourceTree = "<group>"; };
+		D61F3C04135FF9D500DE42D9 /* BabyMonitorAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BabyMonitorAppDelegate.mm; sourceTree = "<group>"; };
+		D61F3C07135FF9D500DE42D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		D61F3C09135FF9D500DE42D9 /* BabyMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabyMonitorViewController.h; sourceTree = "<group>"; };
+		D61F3C0A135FF9D500DE42D9 /* BabyMonitorViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BabyMonitorViewController.mm; sourceTree = "<group>"; };
+		D61F3C0D135FF9D500DE42D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BabyMonitorViewController.xib; sourceTree = "<group>"; };
+		D61F3C18135FFA4700DE42D9 /* AQLevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQLevelMeter.h; sourceTree = "<group>"; };
+		D61F3C19135FFA4700DE42D9 /* LevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelMeter.h; sourceTree = "<group>"; };
+		D61F3C1A135FFA4700DE42D9 /* MeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterTable.h; sourceTree = "<group>"; };
+		D61F3C1B135FFA4700DE42D9 /* MeterTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeterTable.cpp; sourceTree = "<group>"; };
+		D61F3C1C135FFA4700DE42D9 /* LevelMeter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelMeter.mm; sourceTree = "<group>"; };
+		D61F3C1D135FFA4700DE42D9 /* AQLevelMeter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQLevelMeter.mm; sourceTree = "<group>"; };
+		D61F3C21135FFA9400DE42D9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D61F3C2C135FFADB00DE42D9 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		D61F3C2D135FFADB00DE42D9 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		D61F3C2E135FFADB00DE42D9 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		D61F3C2F135FFADB00DE42D9 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		D61F3C30135FFADB00DE42D9 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		D61F3C31135FFADB00DE42D9 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		D61F3C32135FFADB00DE42D9 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		D61F3C33135FFADB00DE42D9 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		D61F3C34135FFADB00DE42D9 /* BMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUtility.h; sourceTree = "<group>"; };
+		D61F3C38135FFB0400DE42D9 /* ParentModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentModeView.h; sourceTree = "<group>"; };
+		D61F3C39135FFB0400DE42D9 /* ParentModeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParentModeView.mm; sourceTree = "<group>"; };
+		D61F3C3B135FFB0C00DE42D9 /* BabyModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyModeView.h; sourceTree = "<group>"; };
+		D61F3C3C135FFB0C00DE42D9 /* BabyModeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BabyModeView.mm; sourceTree = "<group>"; };
+		D61F3C40135FFBA500DE42D9 /* PacketSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketSender.h; sourceTree = "<group>"; };
+		D61F3C41135FFBA500DE42D9 /* PacketSender.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PacketSender.mm; sourceTree = "<group>"; };
+		D61F3C42135FFBA500DE42D9 /* PacketReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketReceiver.h; sourceTree = "<group>"; };
+		D61F3C43135FFBA500DE42D9 /* PacketReceiver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PacketReceiver.mm; sourceTree = "<group>"; };
+		D61F3C44135FFBA500DE42D9 /* PeerManagerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerManagerServer.h; sourceTree = "<group>"; };
+		D61F3C45135FFBA500DE42D9 /* PeerManagerServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeerManagerServer.mm; sourceTree = "<group>"; };
+		D61F3C46135FFBA500DE42D9 /* MediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
+		D61F3C47135FFBA500DE42D9 /* MediaPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaPlayer.mm; sourceTree = "<group>"; };
+		D61F3C48135FFBA500DE42D9 /* MediaRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaRecorder.h; sourceTree = "<group>"; };
+		D61F3C49135FFBA500DE42D9 /* MediaRecorder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaRecorder.mm; sourceTree = "<group>"; };
+		D61F3C4A135FFBA500DE42D9 /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		D61F3C4B135FFBA500DE42D9 /* StateMachine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StateMachine.mm; sourceTree = "<group>"; };
+		D61F3C52135FFBB100DE42D9 /* MediaPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPacket.h; sourceTree = "<group>"; };
+		D61F3C53135FFBB100DE42D9 /* MediaPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaPacket.cpp; sourceTree = "<group>"; };
+		D61F3C54135FFBB100DE42D9 /* ControlPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPacket.h; sourceTree = "<group>"; };
+		D61F3C55135FFBB100DE42D9 /* ControlPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlPacket.cpp; sourceTree = "<group>"; };
+		D61F3C5A135FFCC900DE42D9 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		D64343401360E61A005A213F /* CustomUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISwitch.h; sourceTree = "<group>"; };
+		D64343411360E61A005A213F /* CustomUISwitch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomUISwitch.mm; sourceTree = "<group>"; };
+		D64343431360E673005A213F /* switch_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_bg.png; sourceTree = "<group>"; };
+		D64343441360E673005A213F /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch.png; sourceTree = "<group>"; };
+		D64343471360E688005A213F /* switch_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_bg@2x.png"; sourceTree = "<group>"; };
+		D64343481360E688005A213F /* switch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch@2x.png"; sourceTree = "<group>"; };
+		D64343591360EEB8005A213F /* device_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_active.png; sourceTree = "<group>"; };
+		D643435A1360EEB8005A213F /* device_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_inactive.png; sourceTree = "<group>"; };
+		D643435D1360EEC1005A213F /* device_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_active@2x.png"; sourceTree = "<group>"; };
+		D643435E1360EEC1005A213F /* device_inactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_inactive@2x.png"; sourceTree = "<group>"; };
+		D643436B13610B68005A213F /* PeerManagerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerManagerClient.h; sourceTree = "<group>"; };
+		D643436C13610B68005A213F /* PeerManagerClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeerManagerClient.mm; sourceTree = "<group>"; };
+		D643440A1369FC09005A213F /* PeerPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerPickerView.h; sourceTree = "<group>"; };
+		D643440B1369FC09005A213F /* PeerPickerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeerPickerView.mm; sourceTree = "<group>"; };
+		D6AB47261360B13100F4678D /* MainModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModeView.h; sourceTree = "<group>"; };
+		D6AB47271360B13100F4678D /* MainModeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainModeView.mm; sourceTree = "<group>"; };
+		D6AB472A1360E31100F4678D /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		D6B6E59B1371C30000D3D507 /* BMUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BMUtility.cpp; sourceTree = "<group>"; };
+		D6B6E5A513788EB800D3D507 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		D6B6E5A613788EB800D3D507 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		D6B6E5A9137B074B00D3D507 /* ProtocolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolManager.h; sourceTree = "<group>"; };
+		D6B6E5AA137B074B00D3D507 /* ProtocolManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolManager.mm; sourceTree = "<group>"; };
+		D6B6E5AC137BA3D200D3D507 /* DataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPacket.h; sourceTree = "<group>"; };
+		D6B6E5AD137BA3D300D3D507 /* DataPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataPacket.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D61F3BED135FF9D500DE42D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61F3C22135FFA9400DE42D9 /* AudioToolbox.framework in Frameworks */,
+				D61F3BF5135FF9D500DE42D9 /* UIKit.framework in Frameworks */,
+				D61F3BF7135FF9D500DE42D9 /* Foundation.framework in Frameworks */,
+				D61F3BF9135FF9D500DE42D9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D61F3BE5135FF9D500DE42D9 = {
+			isa = PBXGroup;
+			children = (
+				D61F3C58135FFCAD00DE42D9 /* Resources */,
+				D61F3C3F135FFB8D00DE42D9 /* Entities */,
+				D61F3C3E135FFB8600DE42D9 /* Modules */,
+				D61F3C23135FFAB100DE42D9 /* iPublicUtility */,
+				D61F3C14135FF9ED00DE42D9 /* Views */,
+				D61F3BFA135FF9D500DE42D9 /* BabyMonitor */,
+				D61F3BF3135FF9D500DE42D9 /* Frameworks */,
+				D61F3BF1135FF9D500DE42D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D61F3BF1135FF9D500DE42D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3BF0135FF9D500DE42D9 /* BabyMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61F3BF3135FF9D500DE42D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C21135FFA9400DE42D9 /* AudioToolbox.framework */,
+				D61F3BF4135FF9D500DE42D9 /* UIKit.framework */,
+				D61F3BF6135FF9D500DE42D9 /* Foundation.framework */,
+				D61F3BF8135FF9D500DE42D9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D61F3BFA135FF9D500DE42D9 /* BabyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C03135FF9D500DE42D9 /* BabyMonitorAppDelegate.h */,
+				D61F3C04135FF9D500DE42D9 /* BabyMonitorAppDelegate.mm */,
+				D61F3C06135FF9D500DE42D9 /* MainWindow.xib */,
+				D61F3C09135FF9D500DE42D9 /* BabyMonitorViewController.h */,
+				D61F3C0A135FF9D500DE42D9 /* BabyMonitorViewController.mm */,
+				D61F3C0C135FF9D500DE42D9 /* BabyMonitorViewController.xib */,
+				D61F3BFB135FF9D500DE42D9 /* Supporting Files */,
+			);
+			path = BabyMonitor;
+			sourceTree = "<group>";
+		};
+		D61F3BFB135FF9D500DE42D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3BFC135FF9D500DE42D9 /* BabyMonitor-Info.plist */,
+				D61F3BFD135FF9D500DE42D9 /* InfoPlist.strings */,
+				D61F3C00135FF9D500DE42D9 /* BabyMonitor-Prefix.pch */,
+				D61F3C01135FF9D500DE42D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D61F3C14135FF9ED00DE42D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D64344081369FBF4005A213F /* PeerManager */,
+				D643433E1360E5FF005A213F /* CustomModeSliderVIew */,
+				D61F3C17135FFA1000DE42D9 /* LevelMeter */,
+				D61F3C16135FF9FF00DE42D9 /* ModeView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D61F3C16135FF9FF00DE42D9 /* ModeView */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C38135FFB0400DE42D9 /* ParentModeView.h */,
+				D61F3C39135FFB0400DE42D9 /* ParentModeView.mm */,
+				D61F3C3B135FFB0C00DE42D9 /* BabyModeView.h */,
+				D61F3C3C135FFB0C00DE42D9 /* BabyModeView.mm */,
+				D6AB47261360B13100F4678D /* MainModeView.h */,
+				D6AB47271360B13100F4678D /* MainModeView.mm */,
+			);
+			name = ModeView;
+			sourceTree = "<group>";
+		};
+		D61F3C17135FFA1000DE42D9 /* LevelMeter */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C18135FFA4700DE42D9 /* AQLevelMeter.h */,
+				D61F3C19135FFA4700DE42D9 /* LevelMeter.h */,
+				D61F3C1A135FFA4700DE42D9 /* MeterTable.h */,
+				D61F3C1B135FFA4700DE42D9 /* MeterTable.cpp */,
+				D61F3C1C135FFA4700DE42D9 /* LevelMeter.mm */,
+				D61F3C1D135FFA4700DE42D9 /* AQLevelMeter.mm */,
+			);
+			name = LevelMeter;
+			sourceTree = "<group>";
+		};
+		D61F3C23135FFAB100DE42D9 /* iPublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C2C135FFADB00DE42D9 /* CADebugMacros.cpp */,
+				D61F3C2D135FFADB00DE42D9 /* CADebugPrintf.h */,
+				D61F3C2E135FFADB00DE42D9 /* CADebugMacros.h */,
+				D61F3C2F135FFADB00DE42D9 /* CAMath.h */,
+				D61F3C30135FFADB00DE42D9 /* CAStreamBasicDescription.cpp */,
+				D61F3C31135FFADB00DE42D9 /* CAStreamBasicDescription.h */,
+				D61F3C32135FFADB00DE42D9 /* CAXException.cpp */,
+				D61F3C33135FFADB00DE42D9 /* CAXException.h */,
+				D61F3C34135FFADB00DE42D9 /* BMUtility.h */,
+				D6B6E59B1371C30000D3D507 /* BMUtility.cpp */,
+				D6B6E5A513788EB800D3D507 /* Utilities.h */,
+				D6B6E5A613788EB800D3D507 /* Utilities.m */,
+			);
+			name = iPublicUtility;
+			sourceTree = "<group>";
+		};
+		D61F3C3E135FFB8600DE42D9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D6B6E5A8137B072D00D3D507 /* ProtocolManager */,
+				D6B6E5991371BC7900D3D507 /* StateMachine */,
+				D643436A13610B52005A213F /* PeerManager */,
+				D61F3C40135FFBA500DE42D9 /* PacketSender.h */,
+				D61F3C41135FFBA500DE42D9 /* PacketSender.mm */,
+				D61F3C42135FFBA500DE42D9 /* PacketReceiver.h */,
+				D61F3C43135FFBA500DE42D9 /* PacketReceiver.mm */,
+				D61F3C46135FFBA500DE42D9 /* MediaPlayer.h */,
+				D61F3C47135FFBA500DE42D9 /* MediaPlayer.mm */,
+				D61F3C48135FFBA500DE42D9 /* MediaRecorder.h */,
+				D61F3C49135FFBA500DE42D9 /* MediaRecorder.mm */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		D61F3C3F135FFB8D00DE42D9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C52135FFBB100DE42D9 /* MediaPacket.h */,
+				D61F3C53135FFBB100DE42D9 /* MediaPacket.cpp */,
+				D61F3C54135FFBB100DE42D9 /* ControlPacket.h */,
+				D61F3C55135FFBB100DE42D9 /* ControlPacket.cpp */,
+				D6B6E5AC137BA3D200D3D507 /* DataPacket.h */,
+				D6B6E5AD137BA3D300D3D507 /* DataPacket.cpp */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		D61F3C58135FFCAD00DE42D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6AB47291360E2E500F4678D /* Retina */,
+				D61F3C59135FFCB900DE42D9 /* iPhone */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D61F3C59135FFCB900DE42D9 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D64343591360EEB8005A213F /* device_active.png */,
+				D643435A1360EEB8005A213F /* device_inactive.png */,
+				D64343431360E673005A213F /* switch_bg.png */,
+				D64343441360E673005A213F /* switch.png */,
+				D61F3C5A135FFCC900DE42D9 /* bg.png */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		D643433E1360E5FF005A213F /* CustomModeSliderVIew */ = {
+			isa = PBXGroup;
+			children = (
+				D64343401360E61A005A213F /* CustomUISwitch.h */,
+				D64343411360E61A005A213F /* CustomUISwitch.mm */,
+			);
+			name = CustomModeSliderVIew;
+			sourceTree = "<group>";
+		};
+		D643436A13610B52005A213F /* PeerManager */ = {
+			isa = PBXGroup;
+			children = (
+				D643436B13610B68005A213F /* PeerManagerClient.h */,
+				D643436C13610B68005A213F /* PeerManagerClient.mm */,
+				D61F3C44135FFBA500DE42D9 /* PeerManagerServer.h */,
+				D61F3C45135FFBA500DE42D9 /* PeerManagerServer.mm */,
+				D6191077136C904600101BDA /* PeerManager.h */,
+				D6191078136C904700101BDA /* PeerManager.mm */,
+			);
+			name = PeerManager;
+			sourceTree = "<group>";
+		};
+		D64344081369FBF4005A213F /* PeerManager */ = {
+			isa = PBXGroup;
+			children = (
+				D643440A1369FC09005A213F /* PeerPickerView.h */,
+				D643440B1369FC09005A213F /* PeerPickerView.mm */,
+			);
+			name = PeerManager;
+			sourceTree = "<group>";
+		};
+		D6AB47291360E2E500F4678D /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				D643435D1360EEC1005A213F /* device_active@2x.png */,
+				D643435E1360EEC1005A213F /* device_inactive@2x.png */,
+				D64343471360E688005A213F /* switch_bg@2x.png */,
+				D64343481360E688005A213F /* switch@2x.png */,
+				D6AB472A1360E31100F4678D /* bg@2x.png */,
+			);
+			name = Retina;
+			sourceTree = "<group>";
+		};
+		D6B6E5991371BC7900D3D507 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				D61F3C4A135FFBA500DE42D9 /* StateMachine.h */,
+				D61F3C4B135FFBA500DE42D9 /* StateMachine.mm */,
+			);
+			name = StateMachine;
+			sourceTree = "<group>";
+		};
+		D6B6E5A8137B072D00D3D507 /* ProtocolManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6B6E5A9137B074B00D3D507 /* ProtocolManager.h */,
+				D6B6E5AA137B074B00D3D507 /* ProtocolManager.mm */,
+			);
+			name = ProtocolManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D61F3BEF135FF9D500DE42D9 /* BabyMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61F3C11135FF9D500DE42D9 /* Build configuration list for PBXNativeTarget "BabyMonitor" */;
+			buildPhases = (
+				D61F3BEC135FF9D500DE42D9 /* Sources */,
+				D61F3BED135FF9D500DE42D9 /* Frameworks */,
+				D61F3BEE135FF9D500DE42D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyMonitor;
+			productName = BabyMonitor;
+			productReference = D61F3BF0135FF9D500DE42D9 /* BabyMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D61F3BE7135FF9D500DE42D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Studio Sutara LLC";
+			};
+			buildConfigurationList = D61F3BEA135FF9D500DE42D9 /* Build configuration list for PBXProject "BabyMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D61F3BE5135FF9D500DE42D9;
+			productRefGroup = D61F3BF1135FF9D500DE42D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D61F3BEF135FF9D500DE42D9 /* BabyMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D61F3BEE135FF9D500DE42D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61F3BFF135FF9D500DE42D9 /* InfoPlist.strings in Resources */,
+				D61F3C08135FF9D500DE42D9 /* MainWindow.xib in Resources */,
+				D61F3C0E135FF9D500DE42D9 /* BabyMonitorViewController.xib in Resources */,
+				D61F3C5B135FFCC900DE42D9 /* bg.png in Resources */,
+				D6AB472B1360E31100F4678D /* bg@2x.png in Resources */,
+				D64343451360E673005A213F /* switch_bg.png in Resources */,
+				D64343461360E673005A213F /* switch.png in Resources */,
+				D64343491360E688005A213F /* switch_bg@2x.png in Resources */,
+				D643434A1360E688005A213F /* switch@2x.png in Resources */,
+				D643435B1360EEB8005A213F /* device_active.png in Resources */,
+				D643435C1360EEB8005A213F /* device_inactive.png in Resources */,
+				D643435F1360EEC1005A213F /* device_active@2x.png in Resources */,
+				D64343601360EEC1005A213F /* device_inactive@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D61F3BEC135FF9D500DE42D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61F3C02135FF9D500DE42D9 /* main.m in Sources */,
+				D61F3C05135FF9D500DE42D9 /* BabyMonitorAppDelegate.mm in Sources */,
+				D61F3C0B135FF9D500DE42D9 /* BabyMonitorViewController.mm in Sources */,
+				D61F3C1E135FFA4700DE42D9 /* MeterTable.cpp in Sources */,
+				D61F3C1F135FFA4700DE42D9 /* LevelMeter.mm in Sources */,
+				D61F3C20135FFA4700DE42D9 /* AQLevelMeter.mm in Sources */,
+				D61F3C35135FFADC00DE42D9 /* CADebugMacros.cpp in Sources */,
+				D61F3C36135FFADC00DE42D9 /* CAStreamBasicDescription.cpp in Sources */,
+				D61F3C37135FFADC00DE42D9 /* CAXException.cpp in Sources */,
+				D61F3C3A135FFB0400DE42D9 /* ParentModeView.mm in Sources */,
+				D61F3C3D135FFB0C00DE42D9 /* BabyModeView.mm in Sources */,
+				D61F3C4C135FFBA500DE42D9 /* PacketSender.mm in Sources */,
+				D61F3C4D135FFBA500DE42D9 /* PacketReceiver.mm in Sources */,
+				D61F3C4E135FFBA500DE42D9 /* PeerManagerServer.mm in Sources */,
+				D61F3C4F135FFBA500DE42D9 /* MediaPlayer.mm in Sources */,
+				D61F3C50135FFBA500DE42D9 /* MediaRecorder.mm in Sources */,
+				D61F3C51135FFBA500DE42D9 /* StateMachine.mm in Sources */,
+				D61F3C56135FFBB100DE42D9 /* MediaPacket.cpp in Sources */,
+				D61F3C57135FFBB100DE42D9 /* ControlPacket.cpp in Sources */,
+				D6AB47281360B13100F4678D /* MainModeView.mm in Sources */,
+				D64343421360E61A005A213F /* CustomUISwitch.mm in Sources */,
+				D643436D13610B68005A213F /* PeerManagerClient.mm in Sources */,
+				D643440C1369FC09005A213F /* PeerPickerView.mm in Sources */,
+				D6191079136C904700101BDA /* PeerManager.mm in Sources */,
+				D6B6E59C1371C30000D3D507 /* BMUtility.cpp in Sources */,
+				D6B6E5A713788EB800D3D507 /* Utilities.m in Sources */,
+				D6B6E5AB137B074B00D3D507 /* ProtocolManager.mm in Sources */,
+				D6B6E5AE137BA3D300D3D507 /* DataPacket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D61F3BFD135FF9D500DE42D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61F3BFE135FF9D500DE42D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D61F3C06135FF9D500DE42D9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61F3C07135FF9D500DE42D9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		D61F3C0C135FF9D500DE42D9 /* BabyMonitorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61F3C0D135FF9D500DE42D9 /* en */,
+			);
+			name = BabyMonitorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D61F3C0F135FF9D500DE42D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D61F3C10135FF9D500DE42D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D61F3C12135FF9D500DE42D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BabyMonitor/BabyMonitor-Prefix.pch";
+				INFOPLIST_FILE = "BabyMonitor/BabyMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D61F3C13135FF9D500DE42D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BabyMonitor/BabyMonitor-Prefix.pch";
+				INFOPLIST_FILE = "BabyMonitor/BabyMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D61F3BEA135FF9D500DE42D9 /* Build configuration list for PBXProject "BabyMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61F3C0F135FF9D500DE42D9 /* Debug */,
+				D61F3C10135FF9D500DE42D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61F3C11135FF9D500DE42D9 /* Build configuration list for PBXNativeTarget "BabyMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61F3C12135FF9D500DE42D9 /* Debug */,
+				D61F3C13135FF9D500DE42D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D61F3BE7135FF9D500DE42D9 /* Project object */;
+}
